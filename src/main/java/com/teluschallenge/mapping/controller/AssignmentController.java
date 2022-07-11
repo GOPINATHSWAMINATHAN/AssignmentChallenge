@@ -44,7 +44,7 @@ public class AssignmentController {
 	}
 
 	@PostMapping("/assignments")
-	public Assignment createUser(@Valid @RequestBody Assignment assignment) {
+	public Assignment createAssignment(@Valid @RequestBody Assignment assignment) {
 		return assignmentRepository.save(assignment);
 	}
 
